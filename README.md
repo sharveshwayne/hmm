@@ -20,13 +20,13 @@ Now an obvious question pops up.
 The words in the sentence may have many tags which leads to different probabilities for the same sentence, each corresponding to a different combination of possible tags. 
 We need to find the combination which produces the highest probability for the sentence - Virtebi algorithm provides a quick way to do so.
 
-viterbi:
+## viterbi:
 for each step i in 1 .. sentlen,
 store a dictionary
 that maps each tag X
 to the probability of the best tag sequence of length i that ends in X
 
-# backpointer:
+backpointer:
 for each step i in 1..sentlen,
 store a dictionary
 that maps each tag X
